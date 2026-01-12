@@ -2,26 +2,12 @@
 
 this repo is for our project at Storm Hacks 2025. Group members include: ahmad, adrian, rafee, annie
 
-# Quick Guide to Git
+# How to run the program:
 
-Most used commands
-```bash
-    git add . # stage changes
-    git commit -m "description"
-    git push origin <branch_name>
-```
+1. Have docker Installed
+2. Clone the repo
+3. Type "docker compose up --build" without the quotations in the terminal
+4. To run, either go to to the docker app, select the container, and click the front end local host or you can just visit http://localhost:3000 or (whatever port you set your frontend to be on) on your web browser
 
-Branch commands (source control)
-```bash
-    git checkout <branch_name> # this will move you to another branch (caution, it will erase any of your current changes if you made any)
-    git checkout -b <new_branch_name> # this creates a new branch and enters it for you (Most used commands)
-```
 
-Common Workflow (in case you were doing work in main but you wanna push to timeline)
-```bash
-    git add .
-    git commit -m "description"
-    git checkout <branch_name>
-    git merge <another branch name>
-    git push origin timeline
-```
+### Remember to close the container after using, as it uses up some cpu space, and if you're running other projects it is occupying the same port.
